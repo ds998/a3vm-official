@@ -1,0 +1,77 @@
+rs:
+  layouts:
+    application:
+      home: 'POČETNA'
+      about: 'O NAMA'
+      contact: 'KONTAKT'
+      3kolone: '3 Kolone - Default'
+      2kolone: '2 Kolone'
+      4kolone: '4 Kolone'
+      adresa1: 'Gde se nalazimo'
+      mi: 'O nama'
+      mi-prica1: 'Studio arhitekture ATRIUM je nastao 2003. godine u Podgorici, kao partnerski poduhvat dvoje arhitekata Darka Stefanovića i Tanje Popović - Stefanović u nameri da se kreativno, efikasno i ekonomično iskoriste potrebe i potencijali prostornog i socijalnog okruženja.     ATRIUM pruža usluge projektovanja celokupne tehničke dokumentacije potrebne za gradnju, projektovanje enterijera, vizuelizacije, nadzora i savetodavne podrške tokom postupka izgradnje.'
+
+  titles:
+    start: 'Dobrodošli'
+    about: 'O nama'
+    portfolio: 'Portfolio'
+    contact: 'Kontakti'
+
+  welcome:
+    index:
+      main_title: 'Dobrodošli !'
+      prvi_slide: 'Stambeno Poslovni objekat - Ministarstvo Odbrane Crne Gore'
+      drugi_slide: 'Stambeno Poslovni objekat - EURO-PACT / Podgorica'
+      treci_slide: 'hotel OLIVA - HTP OLIVA / Petrovac'
+      cetvrti_slide: 'Stambeno Poslovni objekat - TEHNO LUX doo / Podgorica'
+      peti_slide: 'Stambeno Poslovni objekat - ŠAHOVIC / Podgorica'
+      sesti_slide: 'Poslovni objekat PG mall - ZETAGRADNJA doo / Podgorica'
+      sedmi_slide: 'Poslovni objekat - TELEMONT doo / Podgorica'
+      osmi_slide: 'Stambeni objekat - NEŠOVIC / Podgorica'
+      2_slide: 'Konkursno resenje VRTICA u naselju blok VI / Podgorica'
+      text1: 'Prikladna ARHITEKTURA'
+      text2: 'Mi smo arhitektonski studio ATRIUM. Atrium kao zaštićeni prostor, oaza, polazište i ishodište u traganju za odgovorima u svetu stalnih promena i napretka....<br>Posvećeni smo oblikovanju u prostoru, promišljenom odgovoru na različite projektne zahtjeve , uvijek po mjeri čovjeka.'
+      text3: 'Vitruvius - De ARCHITECTURA'
+      text4: 'Prema najstarijem očuvanom djelu koje govori o arhitekturi, De Architectura, dobra građevina treba imati "firmitas , utilitas , venustas" odnosno ljepotu , čvrstinu i funkciju. <br>Pa se arhitektura često posmatra kao način pronalaženja odgovarajućeg omjera između ove tri osobine, a da ni jedna ne dominira.'
+      poslednji: 'NEKI OD PREDHODNIH RADOVA'
+
+  portfolio:
+    index:
+      title: "Naš oficijelni PORTFOLIO."
+      all: 'SVI'
+      Residential: 'Stambeni'
+      Commercial: 'Poslovni'
+      concept: 'Koncepti'
+      competitions: 'Konkursi'
+      R/C: 'Stambeno Poslovni objekat'
+      O: 'Poslovni objekat'
+      O/C: 'Poslovni objekat'
+      R/CX: 'Stambeno Poslovni kompleks'
+      R: 'Stambeni objekat'
+      C: 'Poslovni objekat'
+      I: 'ENTERIJER'
+
+  about:
+    index:
+      mi2: 'neŠto ukratko o nama'
+      radnitim: 'ATRIUM TIM'
+      radnitim1: 'Ljudi koji čine naš radni tim'
+      darko: 'Darko Stefanović'
+      darko1: 'Vlasnik / Arhitekta'
+      darko2: 'Diplomirani inženjer arhitekture od 1996. godine.'
+      tanja: 'Tanja Popović'
+      tanja1: 'Diplomirani inženjer arhitekture od 1993. godine.'
+      tim: 'SARADNICI'
+      tim1: 'Projektanti saradnici'
+      tim2: 'Mnogobrojni saradnici na izradi projektne dokumentacije.'
+      mi-prica2: 'Studio arhitekture ATRIUM je nastao 2003. godine u Podgorici, kao partnerski poduhvat dvoje arhitekata Darka Stefanovića i Tanje Popović - Stefanović u nameri da se kreativno, efikasno i ekonomično iskoriste potrebe i potencijali prostornog i socijalnog okruženja.     ATRIUM pruža usluge projektovanja celokupne tehničke dokumentacije potrebne za gradnju, projektovanje enterijera, vizuelizacije, nadzora i savetodavne podrške tokom postupka izgradnje.'
+
+  contact:
+    index:
+      contact: 'kontakt'
+      comment: 'Vaše sugestije'
+      adresa2: 'adresa'
+      ime: 'Ime'
+      poruka: 'Poruka'
+      posalji: 'Pošalji'
+

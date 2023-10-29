@@ -1,0 +1,169 @@
+/* MOBILE MENU
+* ======================================================= */
+
+jQuery(document).ready(function ($) {
+
+    var $menu_select = $("<select />");
+    $("<option />", { "selected": "selected", "value": "", "text": "Site Navigation" }).appendTo($menu_select);
+    $menu_select.appendTo(".menu");
+
+    $(".menu ul li a").each(function () {
+        var menu_url = $(this).attr("href");
+        var menu_text = $(this).text();
+        if ($(this).parents("li").length == 2) { menu_text = '- ' + menu_text; }
+        if ($(this).parents("li").length == 3) { menu_text = "-- " + menu_text; }
+        if ($(this).parents("li").length > 3) { menu_text = "--- " + menu_text; }
+        $("<option />", { "value": menu_url, "text": menu_text }).appendTo($menu_select)
+    });
+
+    field_id = ".menu select";
+    $(field_id).change(function () {
+        value = $(this).attr('value');
+        window.location = value;
+        //go
+    });
+});
+
+/* WIDE MENU
+* ======================================================= */
+
+var $navigation    = $('.menu ul');
+        // Regular nav
+$navigation.on('mouseenter', 'li', function () {
+    var $this = $(this),
+                $subMenu = $this.children('ul');
+    if ($subMenu.length) $this.addClass('hover');
+    $subMenu.hide().stop(true, true).fadeIn(150);
+}).on('mouseleave', 'li', function () {
+    $(this).removeClass('hover').children('ul').stop(true, true).fadeOut(70);
+});
+
+if($('.carousel-wrapper').length > 0 && $(window).width() > 600) {
+    $('#myCarousel').carousel({
+        interval: 3000
+    }).trigger('slide');
+
+    $('#myCarousel').find('.active .carousel-caption').addClass('std').delay(1000).fadeIn();
+
+    // Could be slid or slide (slide happens before animation, slid happens after)
+    $('#myCarousel').bind('slid', function() {
+        $('#myCarousel').find('.std').removeClass('std').hide();
+        $(this).find('.active .carousel-caption').addClass('std').delay(1000).fadeIn();
+    });
+}
+
+/* TOOLTIP
+* ======================================================= */
+$('#copyrights').tooltip({
+    selector: "a[rel=tooltip]"
+});
+
+/* PrettyPhoto
+* ======================================================= */
+$(document).ready(function () {
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+});
+
+/* PORTFOLIO FILTER
+* ======================================================= */
+// cache container
+var $container = $('#work-items');
+var $filter = $('.portfolio-filter');
+
+// initialize isotope
+$container.imagesLoaded( function(){
+    $container.isotope({
+        // options...
+        filter: '*'
+    });
+});
+
+// filter items when filter link is clicked
+$('#filters a').click(function () {
+    var selector = $(this).attr('data-filter');
+    $container.isotope({ filter: selector });
+    return false;
+});
+// update columnWidth on window resize
+$(window).smartresize(function () {
+    $container.isotope('reLayout');
+});
+// Filter items when filter link is clicked
+$filter.find('a').click(function () {
+    var selector = $(this).attr('data-filter');
+    $filter.find('a').removeClass('current');
+    $(this).addClass('current');
+});
+
+if($('.map').length > 0)
+{
+    $('.map').each(function(i,e){
+
+        $map = $(e);
+        $map_id = $map.attr('id');
+        $map_lat = $map.attr('data-mapLat');
+        $map_lon = $map.attr('data-mapLon');
+        $map_zoom = parseInt($map.attr('data-mapZoom'));
+        $map_title = $map.attr('data-mapTitle');
+
+        var latlng = new google.maps.LatLng($map_lat, $map_lon);
+        var options = {
+            scrollwheel: true,
+            draggable: true,
+            zoomControl: false,
+            disableDoubleClickZoom: false,
+            disableDefaultUI: true,
+            zoom: $map_zoom,
+            center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var styles = [
+                        {
+                          stylers: [
+                            { hue: "#341400" },
+                            { saturation: -20 }
+                          ]
+                        }, {
+                            featureType: "road",
+                            elementType: "geometry",
+                            stylers: [
+                                { lightness: 100 },
+                                { visibility: "simplified" }
+                          ]
+                        }, {
+                            featureType: "road",
+                            elementType: "labels",
+                            stylers: [
+                                { visibility: "off" }
+                          ]
+                        }
+                    ];
+
+        var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
+
+        var map = new google.maps.Map(document.getElementById($map_id), options);
+
+        var image = '<%= asset_path 'marker.png' %>';
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: $map_title,
+            icon: image
+        });
+
+        map.mapTypes.set('map_style', styledMap);
+        map.setMapTypeId('map_style');
+
+        var contentString = '<p><strong>ATRIUM</strong><br>Arhitektonski studio<br>Moskovska 127</p>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
+
+    });
+}

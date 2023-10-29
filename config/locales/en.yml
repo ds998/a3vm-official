@@ -1,0 +1,76 @@
+en:
+  layouts:
+    application:
+      home: 'HOME'
+      about: 'ABOUT US'
+      contact: 'CONTACT'
+      3kolone: '3 Columns - Default'
+      2kolone: '2 Columns'
+      4kolone: '4 Columns'
+      adresa1: 'Where we are'
+      mi: 'About Us'
+      mi-prica1: 'Studio of Architecture Atrium was founded in 2003 in Podgorica, as the success story of two architects Darko Stefanovic and Tanja Popovic - Stefanovic in order to be creative, efficient and to use cost-effective advantage of the needs and potentials of physical and social environment. ATRIUM provides complete technical documentation required for construction of the buildings, interior design, monitoring and advisory support during the process of constructing.'
+
+  titles:
+    start: 'Welcome'
+    about: 'About Us'
+    portfolio: 'Portfolio'
+    contact: 'Contact'
+
+  welcome:
+    index:
+      main_title: 'We are glad to see you !'
+      prvi_slide: 'Residential / Commercial object - Ministry of Defence of MONTENEGRO'
+      drugi_slide: 'Residential / Commercial object - EURO-PACT / Podgorica'
+      treci_slide: 'hotel OLIVA - HTP OLIVA / Petrovac'
+      cetvrti_slide: 'Residential / Commercial object - TEHNO LUX doo / Podgorica'
+      peti_slide: 'Residential / Commercial object - SHAHOVIC / Podgorica'
+      sesti_slide: 'Commercial object - ZETAGRADNJA doo / Podgorica'
+      sedmi_slide: 'Commercial object - TELEMONT doo / Podgorica'
+      osmi_slide: 'Residential object - NESOVIC / Podgorica'
+      2_slide: 'Architectural Competition for KINDERGARTEN - BLOK VI / Podgorica'
+      text1: 'An ARCHITECTURE APPROPRIATE'
+      text2: 'We are studio for architecture ATRIUM. Atrium as a starting and a finishing point in searching for all the answers in a nowadays world of constant changing…..<br>We are dedicated in designing all the kinds of spaces as an answer to the different projecting tasks, always with a man on mind…'
+      text3: 'Vitruvius - De ARCHITECTURA'
+      text4: 'The earliest surviving written work on the subject of architecture is De architectura , a good building should satisfy the three principles of firmitas , utilitas , venustas / durability, utility, beauty / and the architecture is often seen as a way of finding a suitable ratio between these three traits, and that no one dominates.'
+      poslednji: 'SOME RECENT WORKS'
+
+  portfolio:
+    index:
+      title: "Our Official PORTFOLIO"
+      all: 'ALL'
+      Residential: 'Residential'
+      Commercial: 'Commercial'
+      concept: 'Concepts'
+      competitions: 'Competitions'
+      R/C: 'Residential / Commercial building'
+      O: 'OFFICE building'
+      O/C: 'OFFICE / COMMERCIAL building'
+      R/CX: 'RESIDENTIAL / COMMERCIAL COMPLEX'
+      R: 'RESIDENTIAL building'
+      C: 'COMMERCIAL building'
+      I: 'INTERIOR'
+
+  about:
+    index:
+      mi2: 'Something interesting about us'
+      radnitim: 'ATRIUM TEAM'
+      radnitim1: 'People who make up the us working team'
+      darko: 'Darko Stefanovic'
+      darko1: 'Architect / Leadership'
+      darko2: 'Graduate Engeneer of Architecture since 1996.'
+      tanja: 'Tanja Popovic'
+      tanja1: 'Graduate Engeneer of Architecture since 1993.'
+      tim: 'Associates'
+      tim1: 'Designers'
+      tim2: 'Many working colaborators on the projects documentation.'
+      mi-prica2: 'Studio of Architecture Atrium was founded in 2003 in Podgorica, as the success story of two architects Darko Stefanovic and Tanja Popovic - Stefanovic in order to be creative, efficient and to use cost-effective advantage of the needs and potentials of physical and social environment. ATRIUM provides complete technical documentation required for construction of the buildings, interior design, monitoring and advisory support during the process of constructing.'
+
+  contact:
+    index:
+      contact: 'contact us'
+      comment: 'Leave a comment'
+      adresa2: 'Address'
+      ime: 'Name'
+      poruka: 'Message'
+      posalji: 'Send'

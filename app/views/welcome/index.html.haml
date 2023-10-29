@@ -1,0 +1,194 @@
+- content_for :title, "#{t('titles.start')} | "
+
+%section{ id: "page-title", class: "message-container span12" }
+  %h1= t '.main_title'
+  %hr
+
+%section{ id: "slideshow", class: "span12" }
+  .carousel-wrapper
+    #myCarousel.carousel.slide
+      .carousel-inner
+        .active.item
+          = image_tag "slide/slide_1.jpg"
+          .carousel-caption.prvi-slide{ style: 'display:none'}
+            %h3= t '.prvi_slide'
+
+        .item
+          = image_tag "slide/slide_2.jpg"
+          .carousel-caption{ style: 'display:none'}
+            %h3= t '.2_slide'
+
+        .item
+          = image_tag "slide/slide_3.jpg"
+          .carousel-caption{ style: 'display:none'}
+            %h3= t '.drugi_slide'
+
+        .item
+          = image_tag "slide/slide_4.jpg"
+          .carousel-caption{ style: 'display:none'}
+            %h3= t '.treci_slide'
+
+        .item
+          = image_tag "slide/slide_5.jpg"
+          .carousel-caption{ style: 'display:none'}
+            %h3= t '.cetvrti_slide'
+
+        .item
+          = image_tag "slide/slide_7.jpg"
+          .carousel-caption{ style: 'display:none'}
+            %h3= t '.peti_slide'
+
+        .item
+          = image_tag "slide/slide_8.jpg"
+          .carousel-caption{ style: 'display:none'}
+            %h3= t '.sesti_slide'
+
+        .item
+          = image_tag "slide/slide_9.jpg"
+          .carousel-caption{ style: 'display:none'}
+            %h3= t '.sedmi_slide'
+
+        .item
+          = image_tag "slide/slide_10.jpg"
+          .carousel-caption{ style: 'display:none'}
+            %h3= t '.osmi_slide'
+
+      %a{ class: "carousel-control left", href: "#myCarousel", "data-slide"=>"prev" } ‹
+      %a{ class: "carousel-control right", href: "#myCarousel", "data-slide"=>"next" } ›
+
+%section{ id: "our-experience", class: "span12" }
+  .row
+    .span6
+      .experience-icon
+        %i.icon-th-large
+      %h4.section-title= t '.text1'
+      %p= (t '.text2').html_safe
+
+    .span6
+      .experience-icon
+        %i.icon-th
+      %h4.section-title= t '.text3'
+      %p= (t '.text4').html_safe
+
+%section{ id: "our-work", class: "span12" }
+  %h4.section-title= t '.poslednji'
+  %hr
+
+  #work-items.row
+    .media-box.span4
+      .view.view-first
+        %a{ href: "" }
+          = image_tag "portfolio/001/001-0.jpg", alt: "", title: ""
+        .mask
+          %h4
+            %a{ href: "", title: ""}= t 'portfolio.index.R/C'
+          %p
+            %a{ href: "" } cca 6000m2
+          %p
+            %a{ href: "" } BAR
+          = link_to "", image_path("portfolio/001/001-0.jpg"), class: "lightbox-link folio", rel: "prettyPhoto[001]"
+          %div{ style: "display:none" }
+            = link_to "", image_path("portfolio/001/001-1.jpg"), rel: "prettyPhoto[001]"
+            = link_to "", image_path("portfolio/001/001-2.jpg"), rel: "prettyPhoto[001]"
+            = link_to "", image_path("portfolio/001/001-3.jpg"), rel: "prettyPhoto[001]"
+            = link_to "", image_path("portfolio/001/001-4.jpg"), rel: "prettyPhoto[001]"
+            = link_to "", image_path("portfolio/001/001-5.jpg"), rel: "prettyPhoto[001]"
+
+    .media-box.span4
+      .view.view-first
+        %a{ href: "" }
+          = image_tag "portfolio/015/015-0.jpg", alt: "", title: ""
+        .mask
+          %h4
+            %a{ href: "", title: ""} Hotel "OLIVA"
+          %p
+            %a{ href: "" } cca 9700m2
+          %p
+            %a{ href: "" } PETROVAC
+          = link_to "", image_path("portfolio/015/015-0.jpg"), class: "lightbox-link folio", rel: "prettyPhoto[015]"
+          %div{ style: "display:none" }
+            = link_to "", image_path("portfolio/015/015-1.jpg"), rel: "prettyPhoto[015]"
+            = link_to "", image_path("portfolio/015/015-2.jpg"), rel: "prettyPhoto[015]"
+            = link_to "", image_path("portfolio/015/015-3.jpg"), rel: "prettyPhoto[015]"
+            = link_to "", image_path("portfolio/015/015-4.jpg"), rel: "prettyPhoto[015]"
+            = link_to "", image_path("portfolio/015/015-5.jpg"), rel: "prettyPhoto[015]"
+
+    .media-box.span4
+      .view.view-first
+        %a{ href: "" }
+          = image_tag "portfolio/002/002-0.jpg", alt: "", title: ""
+        .mask
+          %h4
+            %a{ href: "", title: ""}= t 'portfolio.index.R/C'
+          %p
+            %a{ href: "" } cca 10000m2
+          %p
+            %a{ href: "" } BAR
+          = link_to "", image_path("portfolio/002/002-0.jpg"), class: "lightbox-link folio", rel: "prettyPhoto[002]"
+          %div{ style: "display:none" }
+            = link_to "", image_path("portfolio/002/002-1.jpg"), rel: "prettyPhoto[002]"
+            = link_to "", image_path("portfolio/002/002-2.jpg"), rel: "prettyPhoto[002]"
+            = link_to "", image_path("portfolio/002/002-3.jpg"), rel: "prettyPhoto[002]"
+            = link_to "", image_path("portfolio/002/002-4.jpg"), rel: "prettyPhoto[002]"
+            = link_to "", image_path("portfolio/002/002-5.jpg"), rel: "prettyPhoto[002]"
+
+    .media-box.span4
+      .view.view-first
+        %a{ href: "" }
+          = image_tag "portfolio/005/005-0.jpg", alt: "", title: ""
+        .mask
+          %h4
+            %a{ href: "", title: ""}= t 'portfolio.index.R/C'
+          %p
+            %a{ href: "" } cca 19500m2
+          %p
+            %a{ href: "" } PODGORICA
+          = link_to "", image_path("portfolio/005/005-0.jpg"), class: "lightbox-link folio", rel: "prettyPhoto[005]"
+          %div{ style: "display:none" }
+            = link_to "", image_path("portfolio/005/005-1.jpg"), rel: "prettyPhoto[005]"
+            = link_to "", image_path("portfolio/005/005-2.jpg"), rel: "prettyPhoto[005]"
+            = link_to "", image_path("portfolio/005/005-3.jpg"), rel: "prettyPhoto[005]"
+            = link_to "", image_path("portfolio/005/005-4.jpg"), rel: "prettyPhoto[005]"
+            = link_to "", image_path("portfolio/005/005-5.jpg"), rel: "prettyPhoto[005]"
+
+    .media-box.span4
+      .view.view-first
+        %a{ href: "" }
+          = image_tag "portfolio/026/026-0.jpg", alt: "", title: ""
+        .mask
+          %h4
+            %a{ href: "", title: ""}= t 'portfolio.index.O'
+          %p
+            %a{ href: "" } TELEMONT
+          %p
+            %a{ href: "" } cca 1200m2
+          %p
+            %a{ href: "" } PODGORICA
+          = link_to "", image_path("portfolio/026/026-0.jpg"), class: "lightbox-link folio", rel: "prettyPhoto[026]"
+          %div{ style: "display:none" }
+            = link_to "", image_path("portfolio/026/026-1.jpg"), rel: "prettyPhoto[026]"
+            = link_to "", image_path("portfolio/026/026-2.jpg"), rel: "prettyPhoto[026]"
+            = link_to "", image_path("portfolio/026/026-3.jpg"), rel: "prettyPhoto[026]"
+            = link_to "", image_path("portfolio/026/026-4.jpg"), rel: "prettyPhoto[026]"
+            = link_to "", image_path("portfolio/026/026-5.jpg"), rel: "prettyPhoto[026]"
+
+    .media-box.span4
+      .view.view-first
+        %a{ href: "" }
+          = image_tag "portfolio/025/025-0.jpg", alt: "", title: ""
+        .mask
+          %h4
+            %a{ href: "", title: ""}= t 'portfolio.index.O/C'
+          %p
+            %a{ href: "" } ZETAGRADNJA
+          %p
+            %a{ href: "" } cca 160000m2
+          %p
+            %a{ href: "" } PODGORICA
+          = link_to "", image_path("portfolio/025/025-0.jpg"), class: "lightbox-link folio", rel: "prettyPhoto[025]"
+          %div{ style: "display:none" }
+            = link_to "", image_path("portfolio/025/025-1.jpg"), rel: "prettyPhoto[025]"
+            = link_to "", image_path("portfolio/025/025-2.jpg"), rel: "prettyPhoto[025]"
+            = link_to "", image_path("portfolio/025/025-3.jpg"), rel: "prettyPhoto[025]"
+            = link_to "", image_path("portfolio/025/025-4.jpg"), rel: "prettyPhoto[025]"
+            = link_to "", image_path("portfolio/025/025-5.jpg"), rel: "prettyPhoto[025]"

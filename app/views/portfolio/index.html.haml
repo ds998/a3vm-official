@@ -1,0 +1,21 @@
+- content_for :title, "#{t('titles.portfolio')} | "
+
+%section{ id: "page-title", class: "span12" }
+  %h1= t '.title'
+
+%section{ id: "filters", class: "span12" }
+  %ul.portfolio-filter
+    %li
+      %a{ href: "#", class: "current", "data-filter" => "*" }= t '.all'
+    %li
+      %a{ href: "#", "data-filter" => ".living" }= t '.Residential'
+    %li
+      %a{ href: "#", "data-filter"=> ".business" }= t '.Commercial'
+    %li
+      %a{ href: "#", "data-filter" => ".concept" }= t '.concept'
+    %li
+      %a{ href: "#", "data-filter" => ".competitions" }= t '.competitions'
+
+%section{ id: "page-title", class: "span12" }
+  #work-items.row
+    = render 'content', span: 'span4'

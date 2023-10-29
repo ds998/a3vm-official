@@ -1,0 +1,52 @@
+//= require jquery.min
+//= require imagesloaded.min
+//= require start/jquery.backstretch.min
+
+jQuery(document).ready(function ($) {
+    var logo = $('img#enter-logo'),
+        discover = $('a.discover-link'),
+        $imgdiv = $(this).find('div#main-image');
+
+    $.backstretch([
+      "<%= image_path 'start/1.jpg' %>",
+      "<%= image_path 'start/2.jpg' %>",
+      "<%= image_path 'start/3.jpg' %>"],
+    {duration: 3000, fade: 750});
+
+    // $("span#a0").click(function() {
+    //   var $this = $(this);
+    //   $('span').removeClass('nav-dot-current');
+    //   $this.addClass('nav-dot-current');
+    //   $.backstretch($this.data('image'));
+    // });
+
+    // $("span#a1").click(function() {
+    //   var $this = $(this);
+    //   $('span').removeClass('nav-dot-current');
+    //   $this.addClass('nav-dot-current');
+    //   $.backstretch($this.data('image'));
+    // });
+
+    // $("span#a2").click(function() {
+    //   var $this = $(this);
+    //   $('span').removeClass('nav-dot-current');
+    //   $this.addClass('nav-dot-current');
+    //   $.backstretch($this.data('image'));
+    // });
+
+    $(window).on("backstretch.before", function (e, instance, index) {
+      $('span').removeClass('nav-dot-current');
+      $("span#a" + index).addClass('nav-dot-current');
+    });
+
+    $('div#enter-here').hover(
+        function() {
+            $imgdiv.empty();
+            $imgdiv.append(discover.show());
+        }, function() {
+            $imgdiv.empty();
+            $imgdiv.append(logo);
+        }
+    );
+
+});

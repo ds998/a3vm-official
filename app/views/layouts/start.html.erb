@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>A3VM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Fullscreen Slit Slider with CSS3 and jQuery" />
+        <meta name="keywords" content="slit slider, plugin, css3, transitions, jquery, fullscreen, autoplay" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300|Grand+Hotel" rel="stylesheet" type="text/css" />
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <%= stylesheet_link_tag    "start", media: "all", "data-turbolinks-track" => true %>
+  </head>
+  <body>
+
+  <div id="entrance">
+    <div id="enter-here">
+      <div id="main-image">
+        <%= image_tag 'start/start_a3vm_logo.png', id: "enter-logo" %>
+      </div>
+      <br>
+      <img src="<%= image_path 'start/start_a3vm_enter.png' %>" usemap="#enter_map">
+      <map name="enter_map">
+        <area  alt="enter-english" href="/welcome?locale=en" shape="rect" coords="0,9,166,44" style="outline:none;" />
+        <area  alt="enter-mne" href="/welcome?locale=rs" shape="rect" coords="201,8,347,45" style="outline:none;" />
+      </map>
+    </div>
+    <%= link_to("/welcome?locale=en", class: "discover-link", style: "display:none") do %>
+      <%= image_tag "start/discover.png" %>
+    <% end %>
+  </div>
+
+
+
+    <nav id="nav-dots" class="nav-dots">
+      <span id="a0" data-image=<%= image_path 'start/1.jpg' %> class="nav-dot-current" ></span>
+      <span id="a1" data-image=<%= image_path 'start/2.jpg' %> class=""></span>
+      <span id="a2" data-image=<%= image_path 'start/3.jpg' %> class=""></span>
+    </nav>
+
+  </body>
+  <%= javascript_include_tag "start" %>
+</html>
+

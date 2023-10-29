@@ -1,0 +1,61 @@
+- content_for :title, "#{t('titles.about')} | "
+
+%section#page-title.span12
+  %h1= t '.mi2'
+  %hr
+
+%section
+  .span12
+    %p= t '.mi-prica2'
+    %br
+    %br
+
+%section
+  .span12
+    %h4.comment-title
+      = t '.radnitim'
+      %small= t '.radnitim1'
+    %hr
+
+  .span4
+    .team-member
+      .member-photo
+        = image_tag "about/01.jpg", alt: ""
+
+      .member-info
+        %h4= t '.darko'
+        %span.position= t '.darko1'
+        %p= t '.darko2'
+        %ul.member-social-links
+          %li
+            %a{ href: "https://www.facebook.com/a3vm.studio", target: "_blank" } Facebook
+          %li
+            %a{ href: "http://me.linkedin.com/pub/darko-stefanovic/82/220/a56", target: "_blank" } LinkedIn
+
+  .span4
+    .team-member
+      .member-photo
+        = image_tag "about/02.jpg", alt: ""
+
+      .member-info
+        %h4= t '.tanja'
+        %span.position= t '.darko1'
+        %p= t '.tanja1'
+        %ul.member-social-links
+          %li
+            %a{ href: "https://www.facebook.com/a3vm.studio", target: "_blank" } Facebook
+
+  .span4
+    .team-member
+      .member-photo
+        = image_tag "about/03.jpg", alt: ""
+
+      .member-info
+        %h4= t '.tim'
+        %span.position= t '.tim1'
+        %p= t '.tim2'
+        %ul.member-social-links
+          %li
+            %a{ href: "https://www.facebook.com/a3vm.studio", target: "_blank" } Facebook
+
+

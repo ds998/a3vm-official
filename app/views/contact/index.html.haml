@@ -1,0 +1,36 @@
+- content_for :title, "#{t('titles.contact')} | "
+
+%section#page-title.span12
+  %h1= t '.contact'
+  %hr
+
+%section#google.span12
+  #map-area.view-first
+    %div{ class: "map", id: "map_1", "data-mapLat"=>"42.444966", "data-mapLon"=>"19.248699", "data-mapZoom"=>"17", "data-mapTitle"=>"Atrium location" }
+
+%section#page-title.span12
+  %p
+  %hr
+
+%section#content.span3
+  %h3.comment-title= t '.adresa2'
+  %p.address Moskovska 127<br>Podgorica, MONTENEGRO
+  %p.phone
+    Phone:
+    %span (+382) 67 24-84-84
+    %br
+    Fax: (+382) 20 510-086
+  %p.email
+    %a{ href: "mailto:arh.atrium@t-com.me"}
+      arh.atrium@t-com.me
+
+%section#blog-single.span9
+  .comment-form
+    %h3.comment-title= t '.comment'
+    %p
+      %input{ class: "span4", type: "text", placeholder: ( t '.ime' ) }
+    %p
+      %input{ class: "span4", type: "text", placeholder: "Email" }
+    %p
+      %textarea{ class: "span6", rows: "6", placeholder: ( t '.poruka' ) }
+    %a.btn.btn-large.btn-success= t '.posalji'
