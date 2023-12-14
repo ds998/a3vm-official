@@ -5,7 +5,7 @@ ruby '3.0.1'
 
 gem 'bigdecimal', '>=2.5.5'
 
-gem 'rails', '~> 5.2.8'
+gem 'rails', '~> 6.1', '>= 6.1.3.2'
 
 gem 'thin'
 
