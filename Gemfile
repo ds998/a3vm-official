@@ -23,6 +23,8 @@ gem 'coffee-rails', '~> 5.0.0'
 
 gem "haml-rails", '~> 2.1.0'
 
+gem "puma", '~> 6.4.0'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
