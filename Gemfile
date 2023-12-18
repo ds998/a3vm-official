@@ -10,7 +10,7 @@ gem 'rails', '~> 6.1', '>= 6.1.3.2'
 gem 'thin'
 
 # Use sqlite3 as the database for Active Record
-gem 'pg', '0.17.0'
+gem 'pg', '0.18.4'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
