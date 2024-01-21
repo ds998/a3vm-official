@@ -2,7 +2,27 @@
 //= require imagesloaded.min
 //= require start/jquery.backstretch.min
 
+function pingWebsite(url){
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if(xhr.readyState === XMLHttpRequest.DONE){
+            if(xhr.status === 200){
+                console.log("Website "+ url + " is reachable.");
+            }else{
+                console.log("Website "+ url + " returned a non-200 status code: " + xhr.status);
+            }
+        }
+    }
+
+    xhr.open("GET", url, true);
+    xhr.send();
+}
+
 jQuery(document).ready(function ($) {
+    setInterval(function(){
+        pingWebsite("https://arhatrium.com")
+    }, 60000);
+
     var logo = $('img#enter-logo'),
         discover = $('a.discover-link'),
         $imgdiv = $(this).find('div#main-image');
@@ -50,3 +70,5 @@ jQuery(document).ready(function ($) {
     );
 
 });
+
+

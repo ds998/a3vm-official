@@ -9,7 +9,7 @@ rs:
       4kolone: '4 Kolone'
       adresa1: 'Gde se nalazimo'
       mi: 'O nama'
-      mi-prica1: 'Studio arhitekture ATRIUM je nastao 2003. godine u Podgorici, kao partnerski poduhvat dvoje arhitekata Darka Stefanovića i Tanje Popović - Stefanović u nameri da se kreativno, efikasno i ekonomično iskoriste potrebe i potencijali prostornog i socijalnog okruženja.     ATRIUM pruža usluge projektovanja celokupne tehničke dokumentacije potrebne za gradnju, projektovanje enterijera, vizuelizacije, nadzora i savetodavne podrške tokom postupka izgradnje.'
+      mi-prica1: 'Studio arhitekture ATRIUM je nastao 2003. godine u Podgorici, kao partnerski poduhvat dvoje arhitekata Darka Stefanovića i Tanje Popović - Stefanović u nameri da se kreativno, efikasno i ekonomično iskoriste potrebe i potencijali prostornog i socijalnog okruženja. ATRIUM pruža usluge projektovanja celokupne tehničke dokumentacije potrebne za gradnju, projektovanje enterijera, vizuelizacije, nadzora i savetodavne podrške tokom postupka izgradnje.'
 
   titles:
     start: 'Dobrodošli'
@@ -41,6 +41,7 @@ rs:
       all: 'SVI'
       Residential: 'Stambeni'
       Commercial: 'Poslovni'
+      Houses: 'Kuće'
       concept: 'Koncepti'
       competitions: 'Konkursi'
       R/C: 'Stambeno Poslovni objekat'
@@ -50,6 +51,7 @@ rs:
       R: 'Stambeni objekat'
       C: 'Poslovni objekat'
       I: 'ENTERIJER'
+      H: 'Individualni stambeni objekat'
 
   about:
     index:
@@ -64,7 +66,7 @@ rs:
       tim: 'SARADNICI'
       tim1: 'Projektanti saradnici'
       tim2: 'Mnogobrojni saradnici na izradi projektne dokumentacije.'
-      mi-prica2: 'Studio arhitekture ATRIUM je nastao 2003. godine u Podgorici, kao partnerski poduhvat dvoje arhitekata Darka Stefanovića i Tanje Popović - Stefanović u nameri da se kreativno, efikasno i ekonomično iskoriste potrebe i potencijali prostornog i socijalnog okruženja.     ATRIUM pruža usluge projektovanja celokupne tehničke dokumentacije potrebne za gradnju, projektovanje enterijera, vizuelizacije, nadzora i savetodavne podrške tokom postupka izgradnje.'
+      mi-prica2: 'Studio arhitekture ATRIUM je nastao 2003. godine u Podgorici, kao partnerski poduhvat dvoje arhitekata Darka Stefanovića i Tanje Popović - Stefanović u nameri da se kreativno, efikasno i ekonomično iskoriste potrebe i potencijali prostornog i socijalnog okruženja. ATRIUM pruža usluge projektovanja celokupne tehničke dokumentacije potrebne za gradnju, projektovanje enterijera, vizuelizacije, nadzora i savetodavne podrške tokom postupka izgradnje.'
 
   contact:
     index:

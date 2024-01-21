@@ -9,6 +9,8 @@ gem 'rails', '~> 6.1', '>= 6.1.3.2'
 
 gem 'thin'
 
+gem 'eventmachine', github: 'eventmachine/eventmachine'
+
 # Use sqlite3 as the database for Active Record
 gem 'pg', '~> 1.1'
 

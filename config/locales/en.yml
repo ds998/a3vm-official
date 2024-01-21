@@ -41,6 +41,7 @@ en:
       all: 'ALL'
       Residential: 'Residential'
       Commercial: 'Commercial'
+      houses: 'Houses'
       concept: 'Concepts'
       competitions: 'Competitions'
       R/C: 'Residential / Commercial building'
@@ -50,6 +51,7 @@ en:
       R: 'RESIDENTIAL building'
       C: 'COMMERCIAL building'
       I: 'INTERIOR'
+      H: 'HOUSE'
 
   about:
     index:
