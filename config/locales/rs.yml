@@ -41,7 +41,7 @@ rs:
       all: 'SVI'
       Residential: 'Stambeni'
       Commercial: 'Poslovni'
-      Houses: 'Kuće'
+      Family houses: 'Porodične kuće'
       concept: 'Koncepti'
       competitions: 'Konkursi'
       R/C: 'Stambeno Poslovni objekat'
